@@ -1,0 +1,17 @@
+<div [ngStyle]="{ width: styleExp }" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Shell</a>
+  <a href="/remote">MicroFrontend</a>
+  <a href="remote1">MicroFrontend1</a>
+  <a href="/mfe1">MicroFrontend-1</a>
+  <a href="mfe2">MicroFrontend1-2</a>
+</div>
+
+<span style="font-size: 30px; cursor: pointer" (click)="openNav()"
+  >&#9776;</span
+>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
